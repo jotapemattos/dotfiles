@@ -81,7 +81,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "min-theme",
+      colorscheme = "vesper",
     },
   },
 }
