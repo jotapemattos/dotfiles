@@ -135,12 +135,6 @@ alias tls="tmuxifier load-session"
 alias tes="tmuxifier edit-session"
 alias tns="tmuxifier new-session"
 
-# Always work in a tmux session if Tmux is installed
-if which tmux 2>&1 >/dev/null; then
-  if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
-    tmux attach -t default || tmux new -s default; exit
-  fi
-fi
 
 # bun completions
 [ -s "/home/jotape/.bun/_bun" ] && source "/home/jotape/.bun/_bun"
