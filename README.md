@@ -1,1 +1,1 @@
-My personal dotfiles manage by Stow. 
+My personal dotfiles.
