@@ -1,5 +1,10 @@
 return {
   {
+    "dgox16/oldworld.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  {
     "datsfilipe/vesper.nvim",
     lazy = true,
     config = function()
@@ -81,7 +86,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "vesper",
+      colorscheme = "oldworld",
     },
   },
 }
