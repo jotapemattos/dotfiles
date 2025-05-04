@@ -1,9 +1,20 @@
 return {
   {
-    "dgox16/oldworld.nvim",
+    "thigcampos/cupertino.nvim",
     lazy = false,
     priority = 1000,
   },
+  {
+    "dgox16/oldworld.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("oldworld").setup({
+        variant = "default",
+      })
+    end,
+  },
+  { "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = ... },
   {
     "datsfilipe/vesper.nvim",
     lazy = true,
@@ -86,7 +97,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "oldworld",
+      colorscheme = "gruvbox",
     },
   },
 }
