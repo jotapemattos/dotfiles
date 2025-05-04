@@ -8,7 +8,7 @@ bold_italic_font auto
 font_size 12.0
 
 # BEGIN_KITTY_THEME
-# vague kitty
+# Gruvbox Dark
 include current-theme.conf
 # END_KITTY_THEME
 
