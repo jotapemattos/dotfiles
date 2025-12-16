@@ -51,6 +51,8 @@ return {
         "query",
         "graphql",
         "prisma",
+        "rust",
+        "ron",
         "regex",
         "tsx",
         "typescript",
