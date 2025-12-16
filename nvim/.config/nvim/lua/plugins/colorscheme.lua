@@ -1,5 +1,16 @@
 return {
   {
+    "bettervim/yugen.nvim",
+  },
+  {
+    "jwbaldwin/oscura.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      -- configuration options (see below)
+    },
+  },
+  {
     "thigcampos/cupertino.nvim",
     lazy = false,
     priority = 1000,
@@ -20,7 +31,7 @@ return {
     lazy = true,
     config = function()
       require("vesper").setup({
-        transparent = true, -- Boolean: Sets the background to transparent
+        transparent = false, -- Boolean: Sets the background to transparent
 
         italics = {
           comments = true, -- Boolean: Italicizes comments
@@ -54,7 +65,7 @@ return {
     end,
   },
   { "rose-pine/neovim", name = "rose-pine" },
-
+  { "EdenEast/nightfox.nvim" },
   {
     "catppuccin/nvim",
     as = "catppuccin",
@@ -92,6 +103,20 @@ return {
           which_key = true,
         },
       })
+    end,
+  },
+  {
+    "zenbones-theme/zenbones.nvim",
+    -- Optionally install Lush. Allows for more configuration or extending the colorscheme
+    -- If you don't want to install lush, make sure to set g:zenbones_compat = 1
+    -- In Vim, compat mode is turned on as Lush only works in Neovim.
+    dependencies = "rktjmp/lush.nvim",
+    lazy = false,
+    priority = 1000,
+    -- you can set set configuration options here
+    config = function()
+      vim.g.zenbones_darken_comments = 45
+      vim.o.background = "light"
     end,
   },
   {
