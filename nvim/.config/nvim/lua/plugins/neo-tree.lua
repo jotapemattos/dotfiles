@@ -77,6 +77,10 @@ return {
         h = "parent_or_close",
         l = "child_or_open",
         o = "open",
+        ["<C-h>"] = function() vim.cmd("TmuxNavigateLeft") end,
+        ["<C-j>"] = function() vim.cmd("TmuxNavigateDown") end,
+        ["<C-k>"] = function() vim.cmd("TmuxNavigateUp") end,
+        ["<C-l>"] = function() vim.cmd("TmuxNavigateRight") end,
       },
     },
     default_component_configs = {
