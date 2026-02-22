@@ -1,0 +1,13 @@
+font-size = 14
+font-thicken=true
+
+cursor-style = block 
+cursor-style-blink = true
+
+macos-titlebar-proxy-icon = "hidden"
+title = " "
+
+theme = Vesper
+
+window-colorspace = display-p3
+keybind = shift+enter=text:\n
