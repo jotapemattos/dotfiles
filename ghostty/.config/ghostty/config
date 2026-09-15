@@ -4,6 +4,7 @@ font-thicken=true
 cursor-style = block 
 cursor-style-blink = true
 
+macos-icon = glass
 macos-titlebar-proxy-icon = "hidden"
 title = " "
 
